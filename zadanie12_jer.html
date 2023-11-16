@@ -1,1 +1,26 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<font style="color: green; font-size: 31px;">
+<script>
+var A1_jer = parseInt(prompt("Podaj pierwszy dzień: "));
+var A2_jer = parseInt(prompt("Podaj drugi dzień: "));
+var B1_jer = parseInt(prompt("Podaj pierwszą godzine: "));  
+var B2_jer = parseInt(prompt("Podaj drugą godzine: "));
+  if (A1_jer < 1 || A1_jer > 31 || A2_jer > A1_jer || A2_jer > 31) {
+ if (B1_jer < 1 || B1_jer > 24 || B2_jer < 1 || B2_jer > 24) {
+alert("dni się niezgadzają.");
+    }}else{
+var rozA = Math.abs((A2_jer - A1_jer) * 86400);
+var rozB = Math.abs((B2_jer - B1_jer) * 3600);
+    suma=rozA-rozB;
+       }
+document.write("Różnica między dniami i godzinami jest równa: ", suma, " sekund");
+</script>
+</font>
+</body>
+</html>
