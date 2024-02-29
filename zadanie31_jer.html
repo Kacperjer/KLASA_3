@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript">
+var spodnie = {
+  wysokosc: '80cm',
+  szerokosc: '40cm',
+  z_czego_wykonane: 'welna',
+  pokaz: function () {
+    document.write(this.wysokosc + 'x' + this.szerokosc + ' ' + this.z_czego_wykonane);
+  }
+};
+spodnie.pokaz();
+spodnie.rodzaj = 'dresy';
+spodnie.wypisz = function() {
+  alert('Rodzaj: ' + this.rodzaj);
+};
+spodnie.wypisz();
+</script>
+</head>
+<body>
+<br>
+Programowanie obiektowe- Kacper Jereczek 3Gg1
+</body>
+</html>
